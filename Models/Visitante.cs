@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 public class Visitante{
 [Key]
-public Guid VisistanteId{get;set;}
+public Guid VisistanteId{get;set;}=Guid.NewGuid();
 
 [Required]
 public int Identificador{get;set;}
@@ -13,5 +13,5 @@ public int Edad{get;set;}
 [Required]
 public Boolean Sexo{get;set;}
 
-
+public ICollection<Visita> visita{get;set;}
 }

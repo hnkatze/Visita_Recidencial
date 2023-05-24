@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 public class HabitantesC{
 [Key]
-public Guid HabiId{get;set;}
+public Guid HabiId{get;set;}=Guid.NewGuid();
 
 [Required]
 public String Parentesco{get;set;}

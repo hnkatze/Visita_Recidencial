@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 public class Visita{
 [Key]
-public Guid VisitaId{get;set;}
+public Guid VisitaId{get;set;}=Guid.NewGuid();
 
 [Required]
 public String FechaE{get;set;}
