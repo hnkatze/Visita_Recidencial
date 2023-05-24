@@ -9,7 +9,7 @@ public int Identificador{get;set;}
 [Required]
 public String Nombre {get;set;}
 [Required]
-public int Telegono{get;set;}
+public int Telefono{get;set;}
 
 
 
